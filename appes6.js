@@ -57,7 +57,7 @@ class UI {
         if (target.className === 'delete') {
             target.parentElement.parentElement.remove();
             // Show Alert
-            this.showAlert('Book Removed', 'success')
+            this.showAlert('Record Removed', 'success')
         }
     }
 }
@@ -134,7 +134,7 @@ document.getElementById('book-form').addEventListener('submit', function(e){
         // Add to LS
         Store.addBooks(book);
         // Show success error
-        ui.showAlert('Book Added', 'success')
+        ui.showAlert('Record Added', 'success')
         // clear filds
         ui.clearFilds();
         
