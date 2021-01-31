@@ -58,6 +58,8 @@ class UI {
             target.parentElement.parentElement.remove();
             // Show Alert
             this.showAlert('Record Removed', 'success')
+            // Alert
+            alert('Are you sure?')
         }
     }
 }
@@ -151,9 +153,6 @@ document.querySelector('#book-list').addEventListener('click', function(e) {
     ui.deleteBook(e.target)
 
     Store.removeBooks(e.target.parentElement.previousElementSibling.textContent)
-  
-    // Alert
-    alert('Are you sure?')
-    
+
     e.preventDefault();
 })
