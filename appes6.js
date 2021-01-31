@@ -152,5 +152,8 @@ document.querySelector('#book-list').addEventListener('click', function(e) {
 
     Store.removeBooks(e.target.parentElement.previousElementSibling.textContent)
   
+    // Alert
+    alert('Are you sure?')
+    
     e.preventDefault();
 })
