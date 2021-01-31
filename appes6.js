@@ -59,7 +59,7 @@ class UI {
             // Show Alert
             this.showAlert('Record Removed', 'success')
             // Alert
-            alert('Are you sure?')
+            confirm('Are you sure?')
         }
     }
 }
