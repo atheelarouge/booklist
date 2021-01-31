@@ -54,12 +54,12 @@ class UI {
     }
 
     deleteBook(target) {
-        if (target.className === 'delete') {
-            target.parentElement.parentElement.remove();
-            // Show Alert
-            this.showAlert('Record Removed', 'success')
-            // Alert
-            confirm('Are you sure?')
+        if (confirm('Are you sure?')) {
+            if (target.className === 'delete') {
+                target.parentElement.parentElement.remove();
+                // Show Alert
+                this.showAlert('Record Removed', 'success')
+            }
         }
     }
 }
